@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @attractionsdb.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @attractionsdb.description %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @attractionsdb.rating %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @attractionsdb.entry %>
+</p>
+
+<p>
+  <strong>Web:</strong>
+  <%= @attractionsdb.web %>
+</p>
+
+<%= link_to 'Edit', edit_attractionsdb_path(@attractionsdb) %> |
+<%= link_to 'Back', attractionsdbs_path %>
