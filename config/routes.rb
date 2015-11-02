@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  get 'static_pages/home'
+
   resources :attractionsdbs
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,4 +59,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '/home'=>'attrctionsdbs#home'
 end
+
